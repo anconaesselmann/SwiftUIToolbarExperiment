@@ -71,8 +71,7 @@ struct ContentView: View {
         withAnimation {
             isSleeping = !isSleeping
             toolbarManager.set(isDisabled: isSleeping, for: .blink)
-            toolbarManager.set(isDisabled: isSleeping, for: .moreEyes)
-            print("Now sleeping: \(isSleeping)")
         }
+        toolbarManager.set(isVisible: !isSleeping, for: .moreEyes)
     }
 }

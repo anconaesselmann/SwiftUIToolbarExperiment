@@ -14,13 +14,15 @@ extension ToolbarManager {
         isSetBinding(for: item as ToolbarElement)
     }
     func set(isDisabled: Bool, for item: MainToolbar.Element) {
-        let item = item as ToolbarElement
-        print(item)
-        set(isDisabled: isDisabled, for: item)
+        set(isDisabled: isDisabled, for: item as ToolbarElement)
     }
     func disabled(_ item: MainToolbar.Element) -> Bool {
-        let item = item as ToolbarElement
-        print(item)
-        return disabled(item as ToolbarElement)
+        disabled(item as ToolbarElement)
+    }
+    func set(isVisible: Bool, for item: MainToolbar.Element) {
+        set(isVisible: isVisible, for: item as ToolbarElement)
+    }
+    func visible(_ item: MainToolbar.Element) -> Bool {
+        visible(item as ToolbarElement)
     }
 }

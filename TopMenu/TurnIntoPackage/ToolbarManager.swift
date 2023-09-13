@@ -19,6 +19,9 @@ class ToolbarManager: ObservableObject {
     @AppStorage("ToolbarManager.enabled")
     private var enabled = ToolbarStates()
 
+    @AppStorage("ToolbarManager.visible")
+    private var visible = ToolbarStates()
+
     private let stream = Stream()
 
     func set(_ item: ToolbarElement) {
@@ -80,6 +83,17 @@ class ToolbarManager: ObservableObject {
             enabled.removeElement(item)
         } else {
             enabled.insertElement(item)
+        }
+    }
+    func visible(_ item: ToolbarElement) -> Bool {
+        !visible.containsElement(item)
+    }
+
+    func set(isVisible: Bool, for item: ToolbarElement) {
+        if isVisible {
+            visible.removeElement(item)
+        } else {
+            visible.insertElement(item)
         }
     }
 

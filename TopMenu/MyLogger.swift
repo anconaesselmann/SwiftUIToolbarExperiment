@@ -4,7 +4,7 @@
 import Foundation
 import Combine
 
-// Example of a consumer of the ToolbarManager's ToolbarEvents-stream
+// Example of a global actor that consumes ToolbarEvents
 @globalActor
 actor MyLogger: ObservableObject {
 

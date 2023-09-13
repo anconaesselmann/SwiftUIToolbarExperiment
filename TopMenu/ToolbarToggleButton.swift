@@ -23,13 +23,15 @@ struct ToolbarToggleButton: View {
     }
 
     var body: some View {
-        Button {
-            toolbarManager.toggle(element)
-        } label: {
-            Label(label, systemImage: systemImage)
-                .foregroundColor(color)
+        if toolbarManager.visible(element) {
+            Button {
+                toolbarManager.toggle(element)
+            } label: {
+                Label(label, systemImage: systemImage)
+                    .foregroundColor(color)
+            }
+            .disabled(toolbarManager.disabled(element))
         }
-        .disabled(toolbarManager.disabled(element))
     }
 
     var color: Color {
@@ -62,13 +64,15 @@ struct ToolbarButton: View {
     }
 
     var body: some View {
-        Button {
-            toolbarManager.press(element)
-        } label: {
-            Label(label, systemImage: systemImage)
-                .foregroundColor(color)
+        if toolbarManager.visible(element) {
+            Button {
+                toolbarManager.press(element)
+            } label: {
+                Label(label, systemImage: systemImage)
+                    .foregroundColor(color)
+            }
+            .disabled(toolbarManager.disabled(element))
         }
-        .disabled(toolbarManager.disabled(element))
     }
 
     var color: Color {
