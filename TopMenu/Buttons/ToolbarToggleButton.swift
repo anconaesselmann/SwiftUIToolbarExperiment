@@ -13,7 +13,7 @@ struct ToolbarToggleButton: ToolbarButtonType {
     let element: ToolbarElement
 
     func puttonPressed() {
-        toolbarManager.press(element)
+        toolbarManager.toggle(element)
     }
 
     var body: some View {
