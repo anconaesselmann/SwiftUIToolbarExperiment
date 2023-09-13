@@ -17,19 +17,19 @@ struct MainToolbar: ToolbarContent {
         ToolbarItem(placement: .navigation) {
             HStack {
                 ToolbarToggleButton(
-                    "Blink",
+                    label: "Blink",
                     systemImage: "eye.fill",
                     element: MainToolbar.Element.blink
                 )
                 .keyboardShortcut("b")
                 ToolbarToggleButton(
-                    "Meow",
+                    label: "Meow",
                     systemImage: "pawprint.fill",
                     element: MainToolbar.Element.meow
                 )
                 .keyboardShortcut("m")
                 ToolbarButton(
-                    "More Eyes",
+                    label: "More Eyes",
                     systemImage: "plus.circle",
                     element: MainToolbar.Element.moreEyes
                 )

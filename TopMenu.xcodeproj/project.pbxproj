@@ -19,6 +19,8 @@
 		97BA0BFF2AB2370B0088425A /* ToolbarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BA0BFE2AB2370B0088425A /* ToolbarEvent.swift */; };
 		97BA0C012AB2424F0088425A /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BA0C002AB2424F0088425A /* Eyes.swift */; };
 		97BA0C032AB253040088425A /* EyeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BA0C022AB253040088425A /* EyeManager.swift */; };
+		97BA0C052AB26D080088425A /* ToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BA0C042AB26D080088425A /* ToolbarButton.swift */; };
+		97BA0C072AB26E860088425A /* ToolbarButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BA0C062AB26E860088425A /* ToolbarButtonType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		97BA0BFE2AB2370B0088425A /* ToolbarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarEvent.swift; sourceTree = "<group>"; };
 		97BA0C002AB2424F0088425A /* Eyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
 		97BA0C022AB253040088425A /* EyeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeManager.swift; sourceTree = "<group>"; };
+		97BA0C042AB26D080088425A /* ToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarButton.swift; sourceTree = "<group>"; };
+		97BA0C062AB26E860088425A /* ToolbarButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarButtonType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,7 @@
 				9789B1022AB2149900C48D1D /* TopMenuApp.swift */,
 				9789B1042AB2149900C48D1D /* ContentView.swift */,
 				97BA0BFA2AB236460088425A /* MainToolbar.swift */,
-				97BA0BFC2AB236DE0088425A /* ToolbarToggleButton.swift */,
+				97BA0C082AB26EF00088425A /* Buttons */,
 				9789B1132AB22BE900C48D1D /* Extension+ToolbarManager.swift */,
 				9789B1172AB22D4600C48D1D /* MyLogger.swift */,
 				97BA0C022AB253040088425A /* EyeManager.swift */,
@@ -107,6 +111,16 @@
 				97BA0C002AB2424F0088425A /* Eyes.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		97BA0C082AB26EF00088425A /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				97BA0C062AB26E860088425A /* ToolbarButtonType.swift */,
+				97BA0BFC2AB236DE0088425A /* ToolbarToggleButton.swift */,
+				97BA0C042AB26D080088425A /* ToolbarButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +200,11 @@
 				97BA0C012AB2424F0088425A /* Eyes.swift in Sources */,
 				97BA0BFB2AB236460088425A /* MainToolbar.swift in Sources */,
 				97BA0BFD2AB236DE0088425A /* ToolbarToggleButton.swift in Sources */,
+				97BA0C052AB26D080088425A /* ToolbarButton.swift in Sources */,
 				9789B1032AB2149900C48D1D /* TopMenuApp.swift in Sources */,
 				9789B1122AB21C4800C48D1D /* ToolbarManager.swift in Sources */,
 				9789B1142AB22BE900C48D1D /* Extension+ToolbarManager.swift in Sources */,
+				97BA0C072AB26E860088425A /* ToolbarButtonType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
